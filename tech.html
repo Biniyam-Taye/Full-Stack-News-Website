@@ -14,7 +14,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">fana<span>news.</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+            </a>
+
+            <div class="nav-search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search news..." class="search-input">
+            </div>
 
             <div class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
@@ -22,8 +29,9 @@
                 <a href="politics.html" class="nav-item">Politics</a>
                 <a href="tech.html" class="nav-item active">Technology</a>
                 <a href="sports.html" class="nav-item">Sports</a>
-                <a href="#" class="nav-cta">Subscribe</a>
             </div>
+
+            <a href="#" class="nav-cta">Subscribe</a>
 
             <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </div>
@@ -48,42 +56,132 @@
         </div>
     </div>
 
-    <div style="background: #f4f4f4; padding: 4rem 20px; text-align: center; margin-bottom: 3rem;">
-        <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Technology</h1>
-        <p style="color: #666;">Innovations shaping the future.</p>
-    </div>
+    <!-- Category Hero -->
+    <header class="category-hero">
+        <img src="https://picsum.photos/seed/tech_hero/1920/1080" alt="Technology Background" class="category-hero-bg">
+        <div class="category-hero-overlay"></div>
+        <div class="category-hero-content">
+            <span class="category-tag">Future Forward</span>
+            <h1 class="category-title">INNOVATION &<br>DIGITAL FRONTIERS</h1>
+            <p class="category-desc">Exploring the cutting edge of science, AI, and consumer electronics.</p>
+        </div>
+    </header>
 
+    <!-- Tech Layout with Sidebar -->
     <section class="section-container">
-        <div class="news-grid">
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/tech1/600/400" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 10 mins ago</span><span>AI</span></div>
-                    <h3 class="card-title"><a href="#">Generative AI: What's Next?</a></h3>
-                    <p class="card-excerpt">Experts discuss the ethical implications of the next generation of AI
-                        models.</p>
-                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
-                </div>
-            </article>
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/tech2/600/400" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 2 hours ago</span><span>Mobile</span>
+        <div class="mixed-news-grid">
+            <!-- Main Content Area (8 cols) -->
+            <div class="tech-grid">
+                <!-- Article 1 -->
+                <article class="news-card">
+                    <img src="https://picsum.photos/seed/tech1/600/400" alt="AI News" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta"><span><i class="far fa-clock"></i> 10 mins ago</span><span>AI</span>
+                        </div>
+                        <h3 class="card-title"><a href="#">Generative AI: What's Next?</a></h3>
+                        <p class="card-excerpt">Experts discuss the ethical implications of the next generation of AI
+                            models.</p>
+                        <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                     </div>
-                    <h3 class="card-title"><a href="#">New Phone Release</a></h3>
-                    <p class="card-excerpt">The latest flagship phone features a revolutionary battery life.</p>
-                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </article>
+                <!-- Article 2 -->
+                <article class="news-card">
+                    <img src="https://picsum.photos/seed/tech2/600/400" alt="Mobile News" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta"><span><i class="far fa-clock"></i> 2 hours ago</span><span>Mobile</span>
+                        </div>
+                        <h3 class="card-title"><a href="#">New Phone Release</a></h3>
+                        <p class="card-excerpt">The latest flagship phone features a revolutionary battery life.</p>
+                        <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                    </div>
+                </article>
+                <!-- Article 3 -->
+                <article class="news-card">
+                    <img src="https://picsum.photos/seed/tech3/600/400" alt="Space News" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta"><span><i class="far fa-clock"></i> 1 day ago</span><span>Space</span>
+                        </div>
+                        <h3 class="card-title"><a href="#">Mars Mission Update</a></h3>
+                        <p class="card-excerpt">Rover sends back high-resolution images of ancient riverbeds.</p>
+                        <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                    </div>
+                </article>
+                <!-- Article 4 -->
+                <article class="news-card">
+                    <img src="https://picsum.photos/seed/tech4/600/400" alt="Crypto News" class="card-image">
+                    <div class="card-content">
+                        <div class="card-meta"><span><i class="far fa-clock"></i> 2 days ago</span><span>Crypto</span>
+                        </div>
+                        <h3 class="card-title"><a href="#">Bitcoin Surges Again</a></h3>
+                        <p class="card-excerpt">Market analysts predict a new all-time high as adoption grows.</p>
+                        <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar (4 cols) -->
+            <aside class="tech-sidebar">
+                <h3
+                    style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--primary-yellow); padding-bottom: 0.5rem;">
+                    Trending in Tech</h3>
+                <ul class="footer-links" style="list-style: none;">
+                    <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+                        <a href="#"
+                            style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; text-decoration: none;">Apple
+                            VR Headset Review</a>
+                        <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 5px;">2 hours
+                            ago</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+                        <a href="#"
+                            style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; text-decoration: none;">Tesla
+                            Robot Update</a>
+                        <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 5px;">5 hours
+                            ago</span>
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+                        <a href="#"
+                            style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; text-decoration: none;">Google
+                            I/O Highlights</a>
+                        <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 5px;">1 day ago</span>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <a href="#"
+                            style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; text-decoration: none;">New
+                            Cyber Threat</a>
+                        <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 5px;">2 days ago</span>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-bg-icons">
+                <i class="fas fa-microchip"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-robot"></i>
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="cta-content">
+                <div class="cta-text">
+                    <span class="cta-badge">Future Ready</span>
+                    <h2 class="cta-title">Decode the Future</h2>
+                    <p class="cta-description">Subscribe to our tech newsletter for indepth analysis of the innovations
+                        changing our world.</p>
                 </div>
-            </article>
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/tech3/600/400" alt="News Image" class="card-image">
-                <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 1 day ago</span><span>Space</span></div>
-                    <h3 class="card-title"><a href="#">Mars Mission Update</a></h3>
-                    <p class="card-excerpt">Rover sends back high-resolution images of ancient riverbeds.</p>
-                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                <div class="cta-form-wrapper">
+                    <form class="cta-form">
+                        <div class="input-group">
+                            <i class="far fa-envelope input-icon"></i>
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="cta-btn">Join Now <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
                 </div>
-            </article>
+            </div>
         </div>
     </section>
 
@@ -91,7 +189,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <div class="logo">fana<span>news.</span></div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+                </div>
                 <p>Delivering the truth, every day. Fana News is your premier source for unbiased international
                     reporting.</p>
                 <div style="display: flex; gap: 10px; margin-top: 1rem;">

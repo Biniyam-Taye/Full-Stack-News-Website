@@ -16,7 +16,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">fana<span>news.</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+            </a>
+
+            <div class="nav-search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search news..." class="search-input">
+            </div>
 
             <div class="nav-links">
                 <a href="index.html" class="nav-item active">Home</a>
@@ -24,8 +31,9 @@
                 <a href="politics.html" class="nav-item">Politics</a>
                 <a href="tech.html" class="nav-item">Technology</a>
                 <a href="sports.html" class="nav-item">Sports</a>
-                <a href="#" class="nav-cta">Subscribe</a>
             </div>
+
+            <a href="#" class="nav-cta">Subscribe</a>
 
             <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </div>
@@ -87,11 +95,50 @@
                         <i class="fas fa-bolt"></i>
                         <i class="far fa-lightbulb"></i>
                         <i class="fas fa-fire"></i>
+                        <i class="fas fa-globe-americas"></i>
+                        <i class="far fa-newspaper"></i>
+                        <i class="fas fa-bullhorn"></i>
+                        <i class="fas fa-pen-fancy"></i>
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-microphone"></i>
+                        <i class="fas fa-laptop"></i>
+                        <i class="far fa-comments"></i>
+                        <i class="fas fa-hashtag"></i>
+                        <i class="fas fa-satellite"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="far fa-eye"></i>
+                        <i class="fas fa-share-alt"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="hero-top-badge">
+                        <div class="badge-item live">
+                            <span class="pulse-dot"></span>
+                            <span class="badge-text">LIVE UPDATES</span>
+                        </div>
+                        <div class="badge-item location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="badge-text">GENEVA, SWITZERLAND</span>
+                        </div>
+                        <div class="badge-item trending">
+                            <i class="fas fa-hashtag"></i>
+                            <span class="badge-text">TRENDING NOW</span>
+                        </div>
+                        <div class="badge-item views">
+                            <i class="far fa-eye"></i>
+                            <span class="badge-text">1.2M WATCHING</span>
+                        </div>
                     </div>
 
                     <h1 class="hero-title-large">
-                        <span class="text-yellow">Global Summit</span><br>
-                        <span class="text-black">Reaches Historic Agreement</span>
+                        <div class="text-slider">
+                            <span class="text-yellow slide-item">GLOBAL SUMMIT</span>
+                            <span class="text-yellow slide-item">BREAKING NEWS</span>
+                            <span class="text-yellow slide-item">WORLD UPDATE</span>
+                            <span class="text-yellow slide-item">LATEST STORY</span>
+                        </div>
+                        <span class="text-black">REACHES HISTORIC AGREEMENT</span>
                     </h1>
 
                     <!-- Nested Mini Card -->
@@ -117,29 +164,23 @@
                 </div>
             </div>
 
-            <!-- Tags Row -->
-            <div class="hero-tags-row">
-                <a href="#" class="hero-tag">Politics</a>
-                <a href="#" class="hero-tag">Environment</a>
-                <a href="#" class="hero-tag">Economy</a>
-                <a href="#" class="hero-tag">Global</a>
-                <a href="#" class="hero-tag">Summit</a>
-
-                <div class="action-btns">
-                    <a href="#" class="hero-tag">Latest Updates</a>
-                    <a href="#" class="hero-tag">Live Feed</a>
-                </div>
-            </div>
 
             <!-- Visuals Grid (3 Item Layout) -->
             <div class="hero-visuals-grid">
                 <!-- Card 1 -->
                 <div class="hero-card-visual">
-                    <img src="https://picsum.photos/seed/hero_1/400/600" alt="News Visual 1">
+                    <img src="assets/visual-1.jpg" alt="Netflix Building">
                     <div class="visual-overlay">
                         <div class="visual-info">
-                            <h3>Key Polices</h3>
-                            <span>Read Analysis</span>
+                            <h3>Entertainment</h3>
+                            <div class="desc-card">
+                                <p>Netflix announces groundbreaking new series lineup for 2026, featuring exclusive
+                                    content
+                                    from award-winning directors and a revolutionary approach to interactive
+                                    storytelling
+                                    that will transform how audiences experience entertainment.</p>
+                            </div>
+                            <span>Read More</span>
                         </div>
                         <div class="circle-arrow"><i class="fas fa-arrow-right"></i></div>
                     </div>
@@ -147,25 +188,38 @@
 
                 <!-- Card 2 (Wide) -->
                 <div class="hero-card-visual">
-                    <img src="https://picsum.photos/seed/hero_2/800/600" alt="News Visual 2">
+                    <img src="assets/visual-2.jpg" alt="Elon Musk Tesla Robot">
                     <div class="visual-overlay">
                         <div class="visual-info">
-                            <h3>Live at the Summit</h3>
-                            <span>Watch Coverage</span>
+                            <h3>Technology</h3>
+                            <div class="desc-card">
+                                <p>Elon Musk unveils Tesla's latest AI-powered humanoid robot breakthrough, showcasing
+                                    advanced capabilities in manufacturing automation and household assistance. The
+                                    innovation marks a significant leap forward in robotics and artificial intelligence
+                                    integration.</p>
+                            </div>
+                            <span>Explore Innovation</span>
                         </div>
-                        <div class="circle-arrow"><i class="fas fa-play"></i></div>
+                        <div class="circle-arrow"><i class="fas fa-microchip"></i></div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="hero-card-visual">
-                    <img src="https://picsum.photos/seed/hero_3/400/600" alt="News Visual 3">
+                    <img src="assets/visual-3.jpg" alt="Athletes Track">
                     <div class="visual-overlay">
                         <div class="visual-info">
-                            <h3>Public Reaction</h3>
-                            <span>View Gallery</span>
+                            <h3>Sports</h3>
+                            <div class="desc-card">
+                                <p>Olympic athletes prepare for historic 2026 championship races, training at peak
+                                    performance levels. The upcoming games promise record-breaking performances and
+                                    unforgettable moments as competitors from around the world gather to compete for
+                                    glory.
+                                </p>
+                            </div>
+                            <span>View Results</span>
                         </div>
-                        <div class="circle-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="circle-arrow"><i class="fas fa-trophy"></i></div>
                     </div>
                 </div>
             </div>
@@ -175,53 +229,113 @@
 
     <!-- Top Stories Grid -->
     <section class="section-container">
-        <div class="section-header">
-            <h2 class="section-title">Top Stories</h2>
-            <a href="world.html" class="read-more">View All <i class="fas fa-arrow-right"></i></a>
+        <div class="section-header latest-news-header">
+            <div class="header-title-wrapper">
+                <div class="yellow-accent-bar"></div>
+                <h2 class="section-title latest-news-title">Today's Latest News</h2>
+            </div>
+            <a href="world.html" class="view-all-btn">
+                View All
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
 
         <div class="news-grid">
             <!-- Article 1 -->
             <article class="news-card">
-                <img src="https://picsum.photos/seed/news1/600/400" alt="News Image" class="card-image">
+                <img src="C:/Users/biniy/.gemini/antigravity/brain/26b28ebe-5e31-4549-acda-6dd8573026f5/uploaded_image_0_1768306227708.jpg"
+                    alt="Skydivers" class="card-image">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 2 hours ago</span>
-                        <span>World</span>
+                        <span>Adventure</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Economic Shifts in Eastern Europe: A Special Report</a></h3>
-                    <p class="card-excerpt">Analysts predict a surge in market growth as new trade agreements go into
-                        effect next quarter.</p>
+                    <h3 class="card-title"><a href="#">Extreme Skydiving: Pushing the Limits of Human Flight</a></h3>
+                    <p class="card-excerpt">Professional skydivers break new records with breathtaking aerial stunts,
+                        showcasing the ultimate freedom and adrenaline rush of freefall.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
 
             <!-- Article 2 -->
             <article class="news-card">
-                <img src="https://picsum.photos/seed/news_tech/600/400" alt="News Image" class="card-image">
+                <img src="C:/Users/biniy/.gemini/antigravity/brain/26b28ebe-5e31-4549-acda-6dd8573026f5/uploaded_image_1_1768306227708.jpg"
+                    alt="Business Meeting" class="card-image">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 4 hours ago</span>
-                        <span>Technology</span>
+                        <span>Business</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Quantum Computing: The Next Frontier</a></h3>
-                    <p class="card-excerpt">Major breakthroughs in qubit stability suggest that commercial applications
-                        may be closer than previously thought.</p>
+                    <h3 class="card-title"><a href="#">Corporate Innovation: Teams Driving Digital Transformation</a>
+                    </h3>
+                    <p class="card-excerpt">Leading companies embrace collaborative strategies and cutting-edge
+                        technology
+                        to revolutionize workplace productivity and business growth.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
 
             <!-- Article 3 -->
             <article class="news-card">
-                <img src="https://picsum.photos/seed/news3/600/400" alt="News Image" class="card-image">
+                <img src="C:/Users/biniy/.gemini/antigravity/brain/26b28ebe-5e31-4549-acda-6dd8573026f5/uploaded_image_2_1768306227708.jpg"
+                    alt="Farming" class="card-image">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 5 hours ago</span>
+                        <span>Agriculture</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">Traditional Farming Methods See Modern Revival</a></h3>
+                    <p class="card-excerpt">Farmers return to sustainable agricultural practices using traditional
+                        techniques, proving that ancient wisdom still holds value in modern food production.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="news-card">
+                <img src="C:/Users/biniy/.gemini/antigravity/brain/26b28ebe-5e31-4549-acda-6dd8573026f5/uploaded_image_3_1768306227708.jpg"
+                    alt="Drake" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 6 hours ago</span>
+                        <span>Entertainment</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">Drake Announces New Album and World Tour</a></h3>
+                    <p class="card-excerpt">The global superstar reveals plans for his highly anticipated album release
+                        and announces dates for an extensive world tour starting this summer.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="news-card">
+                <img src="C:/Users/biniy/.gemini/antigravity/brain/26b28ebe-5e31-4549-acda-6dd8573026f5/uploaded_image_4_1768306227708.jpg"
+                    alt="Sports Coach" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 8 hours ago</span>
+                        <span>Sports</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">Ruben Amorim Fired from Manchester United</a></h3>
+                    <p class="card-excerpt">In a shocking decision, Manchester United parts ways with manager Ruben
+                        Amorim
+                        following disappointing results and mounting pressure from fans.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="news-card">
+                <img src="C:/Users/biniy/.gemini/antigravity/brain/26b28ebe-5e31-4549-acda-6dd8573026f5/uploaded_image_1768307142457.jpg"
+                    alt="Professional Portrait" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 10 hours ago</span>
                         <span>Politics</span>
                     </div>
-                    <h3 class="card-title"><a href="#">New Bill Proposes Education Reform</a></h3>
-                    <p class="card-excerpt">Legislators gather to debate the controversial aspects of the new education
-                        funding bill proposed this week.</p>
+                    <h3 class="card-title"><a href="#">PM Abiy Ahmed Announces Major Economic Reforms</a></h3>
+                    <p class="card-excerpt">Ethiopian Prime Minister Abiy Ahmed unveils comprehensive economic reforms
+                        aimed at boosting growth and addressing key development challenges.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
@@ -282,11 +396,76 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Background Decorative Icons -->
+            <div class="cta-bg-icons">
+                <i class="fas fa-bell"></i>
+                <i class="far fa-envelope"></i>
+                <i class="fas fa-rss"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-newspaper"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+
+            <div class="cta-content">
+                <div class="cta-text">
+                    <span class="cta-badge">Stay Informed</span>
+                    <h2 class="cta-title">Never Miss a Story</h2>
+                    <p class="cta-description">Subscribe to our newsletter and get the latest news, exclusive insights,
+                        and breaking stories delivered straight to your inbox every day.</p>
+                </div>
+
+                <div class="cta-form-wrapper">
+                    <form class="cta-form">
+                        <div class="input-group">
+                            <i class="far fa-envelope input-icon"></i>
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="cta-btn">
+                                Subscribe Now
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="cta-privacy">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="cta-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-content">
+                        <h3>500K+</h3>
+                        <p>Active Readers</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe"></i>
+                    <div class="stat-content">
+                        <h3>150+</h3>
+                        <p>Countries Reached</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-newspaper"></i>
+                    <div class="stat-content">
+                        <h3>Daily</h3>
+                        <p>News Updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <div class="logo">fana<span>news.</span></div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+                </div>
                 <p>Delivering the truth, every day. Fana News is your premier source for unbiased international
                     reporting.</p>
                 <div style="display: flex; gap: 10px; margin-top: 1rem;">

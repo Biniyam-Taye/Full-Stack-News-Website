@@ -14,7 +14,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">fana<span>news.</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+            </a>
+
+            <div class="nav-search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search news..." class="search-input">
+            </div>
 
             <div class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
@@ -22,8 +29,9 @@
                 <a href="politics.html" class="nav-item">Politics</a>
                 <a href="tech.html" class="nav-item">Technology</a>
                 <a href="sports.html" class="nav-item active">Sports</a>
-                <a href="#" class="nav-cta">Subscribe</a>
             </div>
+
+            <a href="#" class="nav-cta">Subscribe</a>
 
             <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </div>
@@ -48,46 +56,125 @@
         </div>
     </div>
 
-    <div style="background: #f4f4f4; padding: 4rem 20px; text-align: center; margin-bottom: 3rem;">
-        <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Sports</h1>
-        <p style="color: #666;">Scores, match highlights, and athlete profiles.</p>
-    </div>
+    <!-- Category Hero -->
+    <header class="category-hero">
+        <img src="https://picsum.photos/seed/sports_hero/1920/1080" alt="Sports Background" class="category-hero-bg">
+        <div class="category-hero-overlay"></div>
+        <div class="category-hero-content">
+            <span class="category-tag">Game On</span>
+            <h1 class="category-title">SPORTS<br>CENTER STAGE</h1>
+            <p class="category-desc">Scores, highlights, and exclusive interviews with the world's top athletes.</p>
+        </div>
+    </header>
 
+    <!-- Mixed Grid Layout -->
     <section class="section-container">
-        <div class="news-grid">
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/sport1/600/400" alt="News Image" class="card-image">
+        <div class="mixed-news-grid">
+            <!-- Featured Highlight 1 (Span 6) -->
+            <article class="news-card" style="grid-column: span 6;">
+                <img src="https://picsum.photos/seed/sport1/800/600" alt="Football" class="card-image"
+                    style="height: 350px;">
                 <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 1 hour ago</span><span>Football</span>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 1 hour ago</span>
+                        <span>Football</span>
                     </div>
-                    <h3 class="card-title"><a href="#">City Wins the League Title</a></h3>
+                    <h3 class="card-title" style="font-size: 1.8rem;"><a href="#">City Wins League Title in Stoppage
+                            Time Thriller</a></h3>
                     <p class="card-excerpt">In a stunning upset, the underdogs claimed victory in the final minutes of
-                        the match.</p>
-                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                        the match, silencing the home crowd.</p>
+                    <a href="#" class="read-more">View Highlights <span>&rarr;</span></a>
                 </div>
             </article>
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/sport2/600/400" alt="News Image" class="card-image">
+
+            <!-- Featured Highlight 2 (Span 6) -->
+            <article class="news-card" style="grid-column: span 6;">
+                <img src="https://picsum.photos/seed/sport2/800/600" alt="Tennis" class="card-image"
+                    style="height: 350px;">
                 <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 3 hours ago</span><span>Tennis</span>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 3 hours ago</span>
+                        <span>Tennis</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Grand Slam Finals Set</a></h3>
+                    <h3 class="card-title" style="font-size: 1.8rem;"><a href="#">Grand Slam Finals: The Ultimate
+                            Showdown</a></h3>
                     <p class="card-excerpt">The world's top two players will face off this Sunday for the championship
-                        trophy.</p>
-                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                        trophy in what promises to be a classic.</p>
+                    <a href="#" class="read-more">Read Preview <span>&rarr;</span></a>
                 </div>
             </article>
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/sport3/600/400" alt="News Image" class="card-image">
+
+            <!-- Standard Card 1 -->
+            <article class="news-card standard">
+                <img src="https://picsum.photos/seed/sport3/600/400" alt="Basketball" class="card-image">
                 <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 5 hours ago</span><span>Basketball</span>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 5 hours ago</span>
+                        <span>Basketball</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Record-Breaking Performance</a></h3>
-                    <p class="card-excerpt">Star player scores 60 points in a single game, breaking the decade-long
-                        franchise record.</p>
+                    <h3 class="card-title"><a href="#">Record-Breaking 60-Point Game</a></h3>
+                    <p class="card-excerpt">Star player breaks the franchise scoring record.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
+
+            <!-- Standard Card 2 -->
+            <article class="news-card standard">
+                <img src="https://picsum.photos/seed/sport4/600/400" alt="F1" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 6 hours ago</span>
+                        <span>Formula 1</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">Monaco GP Qualification</a></h3>
+                    <p class="card-excerpt">Tight race for pole position as rain threatens.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Standard Card 3 -->
+            <article class="news-card standard">
+                <img src="https://picsum.photos/seed/sport5/600/400" alt="Olympics" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 1 day ago</span>
+                        <span>Olympics</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">Host City Selection Update</a></h3>
+                    <p class="card-excerpt">IOC announces final candidates for 2036 games.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-bg-icons">
+                <i class="fas fa-trophy"></i>
+                <i class="fas fa-running"></i>
+                <i class="fas fa-stopwatch"></i>
+                <i class="far fa-futbol"></i>
+            </div>
+            <div class="cta-content">
+                <div class="cta-text">
+                    <span class="cta-badge">All Access</span>
+                    <h2 class="cta-title">Never Miss a Moment</h2>
+                    <p class="cta-description">Get live scores, breaking trade news, and miracle highlights sent
+                        straight to your inbox.</p>
+                </div>
+                <div class="cta-form-wrapper">
+                    <form class="cta-form">
+                        <div class="input-group">
+                            <i class="far fa-envelope input-icon"></i>
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="cta-btn">Join the Fanbase <i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -95,7 +182,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <div class="logo">fana<span>news.</span></div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+                </div>
                 <p>Delivering the truth, every day. Fana News is your premier source for unbiased international
                     reporting.</p>
                 <div style="display: flex; gap: 10px; margin-top: 1rem;">

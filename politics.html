@@ -14,7 +14,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">fana<span>news.</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+            </a>
+
+            <div class="nav-search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search news..." class="search-input">
+            </div>
 
             <div class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
@@ -22,8 +29,9 @@
                 <a href="politics.html" class="nav-item active">Politics</a>
                 <a href="tech.html" class="nav-item">Technology</a>
                 <a href="sports.html" class="nav-item">Sports</a>
-                <a href="#" class="nav-cta">Subscribe</a>
             </div>
+
+            <a href="#" class="nav-cta">Subscribe</a>
 
             <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </div>
@@ -48,46 +56,123 @@
         </div>
     </div>
 
-    <div style="background: #f4f4f4; padding: 4rem 20px; text-align: center; margin-bottom: 3rem;">
-        <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Politics</h1>
-        <p style="color: #666;">Analysis of policy, elections, and government.</p>
-    </div>
+    <!-- Category Hero -->
+    <header class="category-hero">
+        <img src="https://picsum.photos/seed/politics_hero/1920/1080" alt="Politics Background"
+            class="category-hero-bg">
+        <div class="category-hero-overlay"></div>
+        <div class="category-hero-content">
+            <span class="category-tag">Power & Policy</span>
+            <h1 class="category-title">POLITICAL<br>LANDSCAPE</h1>
+            <p class="category-desc">In-depth analysis of elections, legislation, and the leaders shaping our democracy.
+            </p>
+        </div>
+    </header>
 
+    <!-- Mixed Grid Layout -->
     <section class="section-container">
-        <div class="news-grid">
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/pol1/600/400" alt="News Image" class="card-image">
+        <div class="mixed-news-grid">
+            <!-- Article 1: Large Featured -->
+            <article class="news-card featured-large">
+                <img src="https://picsum.photos/seed/pol1/800/600" alt="Senate" class="card-image">
                 <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 4 hours ago</span><span>Elections</span>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 4 hours ago</span>
+                        <span>Elections</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Early Polls Show Shift in Voter Sentiment</a></h3>
+                    <h3 class="card-title" style="font-size: 2rem;"><a href="#">Early Polls Show Shift in Voter
+                            Sentiment Ahead of Midterms</a></h3>
                     <p class="card-excerpt">New data suggests that economic concerns are driving voters to reconsider
-                        their traditional party allegiances.</p>
-                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                        their traditional party allegiances in key swing states.</p>
+                    <a href="#" class="read-more">Read Full Report <span>&rarr;</span></a>
                 </div>
             </article>
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/pol2/600/400" alt="News Image" class="card-image">
+
+            <!-- Article 2: Medium Featured -->
+            <article class="news-card featured-medium">
+                <img src="https://picsum.photos/seed/pol2/600/800" alt="Policy" class="card-image">
                 <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 6 hours ago</span><span>Policy</span>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 6 hours ago</span>
+                        <span>Healthcare</span>
                     </div>
                     <h3 class="card-title"><a href="#">Healthcare Bill Passes Senate</a></h3>
-                    <p class="card-excerpt">The landmark legislation aims to reduce costs for millions of families
-                        across the nation.</p>
+                    <p class="card-excerpt">The landmark legislation aims to reduce costs for millions of families.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
-            <article class="news-card">
-                <img src="https://picsum.photos/seed/pol3/600/400" alt="News Image" class="card-image">
+
+            <!-- Article 3 -->
+            <article class="news-card standard">
+                <img src="https://picsum.photos/seed/pol3/600/400" alt="Diplomacy" class="card-image">
                 <div class="card-content">
-                    <div class="card-meta"><span><i class="far fa-clock"></i> 12 hours
-                            ago</span><span>International</span></div>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 12 hours ago</span>
+                        <span>Diplomacy</span>
+                    </div>
                     <h3 class="card-title"><a href="#">Summit Dialogue Continues</a></h3>
-                    <p class="card-excerpt">Leaders extend talks into the night to resolve the ongoing trade dispute.
-                    </p>
+                    <p class="card-excerpt">Leaders extend talks into the night.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
+
+            <!-- Article 4 -->
+            <article class="news-card standard">
+                <img src="https://picsum.photos/seed/pol4/600/400" alt="Local Policy" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 1 day ago</span>
+                        <span>Local</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">City Council Approves Budget</a></h3>
+                    <p class="card-excerpt">New funding allocated for public transport upgrades.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="news-card standard">
+                <img src="https://picsum.photos/seed/pol5/600/400" alt="Opinion" class="card-image">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                        <span>Opinion</span>
+                    </div>
+                    <h3 class="card-title"><a href="#">The Future of Democracy</a></h3>
+                    <p class="card-excerpt">An op-ed on the changing landscape of civic engagement.</p>
+                    <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-bg-icons">
+                <i class="fas fa-balance-scale"></i>
+                <i class="fas fa-landmark"></i>
+                <i class="fas fa-bullhorn"></i>
+                <i class="fas fa-check-double"></i>
+            </div>
+            <div class="cta-content">
+                <div class="cta-text">
+                    <span class="cta-badge">Stay Informed</span>
+                    <h2 class="cta-title">Politics that Matters</h2>
+                    <p class="cta-description">Unbiased reporting on the decisions that affect your life. Subscribe for
+                        our weekly policy digest.</p>
+                </div>
+                <div class="cta-form-wrapper">
+                    <form class="cta-form">
+                        <div class="input-group">
+                            <i class="far fa-envelope input-icon"></i>
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="cta-btn">Subscribe Free <i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -95,7 +180,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <div class="logo">fana<span>news.</span></div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
+                </div>
                 <p>Delivering the truth, every day. Fana News is your premier source for unbiased international
                     reporting.</p>
                 <div style="display: flex; gap: 10px; margin-top: 1rem;">
