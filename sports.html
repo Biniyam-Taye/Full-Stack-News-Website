@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports | Fana News</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=12345">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -14,7 +14,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
                 <img src="assets/logo.png" alt="Fana News Logo" class="logo-img">
             </a>
 
@@ -24,8 +24,8 @@
             </div>
 
             <div class="nav-links">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="world.html" class="nav-item">World</a>
+                <a href="index.php" class="nav-item">Home</a>
+
                 <a href="politics.html" class="nav-item">Politics</a>
                 <a href="tech.html" class="nav-item">Technology</a>
                 <a href="sports.html" class="nav-item active">Sports</a>
@@ -40,13 +40,12 @@
     <!-- Mobile Nav Drawer -->
     <div class="mobile-nav-overlay"></div>
     <div class="mobile-nav-drawer">
-        <div class="mobile-nav-header">
-            <a href="index.html" class="logo">fana<span>news.</span></a>
+        <div class="mobile-nav-header" style="justify-content: flex-end;">
             <div class="close-menu-btn"><i class="fas fa-times"></i></div>
         </div>
         <div class="mobile-links">
-            <a href="index.html">Home</a>
-            <a href="world.html">World</a>
+            <a href="index.php">Home</a>
+
             <a href="politics.html">Politics</a>
             <a href="tech.html">Technology</a>
             <a href="sports.html" class="active">Sports</a>
@@ -58,7 +57,7 @@
 
     <!-- Category Hero -->
     <header class="category-hero">
-        <img src="https://picsum.photos/seed/sports_hero/1920/1080" alt="Sports Background" class="category-hero-bg">
+        <img src="assets/sport-messi.jpg" alt="Sports Background" class="category-hero-bg">
         <div class="category-hero-overlay"></div>
         <div class="category-hero-content">
             <span class="category-tag">Game On</span>
@@ -72,76 +71,75 @@
         <div class="mixed-news-grid">
             <!-- Featured Highlight 1 (Span 6) -->
             <article class="news-card" style="grid-column: span 6;">
-                <img src="https://picsum.photos/seed/sport1/800/600" alt="Football" class="card-image"
-                    style="height: 350px;">
+                <img src="assets/sport-pep.jpg" alt="Football" class="card-image" style="height: 350px;">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 1 hour ago</span>
                         <span>Football</span>
                     </div>
-                    <h3 class="card-title" style="font-size: 1.8rem;"><a href="#">City Wins League Title in Stoppage
-                            Time Thriller</a></h3>
-                    <p class="card-excerpt">In a stunning upset, the underdogs claimed victory in the final minutes of
-                        the match, silencing the home crowd.</p>
+                    <h3 class="card-title" style="font-size: 1.8rem;"><a href="#">Mastermind: Guardiola's Latest
+                            Tactical Shift</a></h3>
+                    <p class="card-excerpt">How the manager's recent strategic changes are redefining modern football
+                        dominance.</p>
                     <a href="#" class="read-more">View Highlights <span>&rarr;</span></a>
                 </div>
             </article>
 
             <!-- Featured Highlight 2 (Span 6) -->
             <article class="news-card" style="grid-column: span 6;">
-                <img src="https://picsum.photos/seed/sport2/800/600" alt="Tennis" class="card-image"
-                    style="height: 350px;">
+                <img src="assets/sport-ufc.jpg" alt="UFC" class="card-image" style="height: 350px;">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 3 hours ago</span>
-                        <span>Tennis</span>
+                        <span>MMA</span>
                     </div>
-                    <h3 class="card-title" style="font-size: 1.8rem;"><a href="#">Grand Slam Finals: The Ultimate
-                            Showdown</a></h3>
-                    <p class="card-excerpt">The world's top two players will face off this Sunday for the championship
-                        trophy in what promises to be a classic.</p>
+                    <h3 class="card-title" style="font-size: 1.8rem;"><a href="#">Champion's Emotion: The Journey to
+                            Gold</a></h3>
+                    <p class="card-excerpt">An unforgettable night in the octagon as the new lightweight king is
+                        crowned.</p>
                     <a href="#" class="read-more">Read Preview <span>&rarr;</span></a>
                 </div>
             </article>
 
             <!-- Standard Card 1 -->
             <article class="news-card standard">
-                <img src="https://picsum.photos/seed/sport3/600/400" alt="Basketball" class="card-image">
+                <img src="assets/sport-ronaldo.jpg" alt="Basketball" class="card-image">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 5 hours ago</span>
-                        <span>Basketball</span>
+                        <span>Football</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Record-Breaking 60-Point Game</a></h3>
-                    <p class="card-excerpt">Star player breaks the franchise scoring record.</p>
+                    <h3 class="card-title"><a href="#">Iconic Number 7</a></h3>
+                    <p class="card-excerpt">Ronaldo's influence continues to shape the next generation of super stars.
+                    </p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
 
             <!-- Standard Card 2 -->
             <article class="news-card standard">
-                <img src="https://picsum.photos/seed/sport4/600/400" alt="F1" class="card-image">
+                <img src="assets/sport-swim.jpg" alt="F1" class="card-image">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 6 hours ago</span>
-                        <span>Formula 1</span>
+                        <span>Swimming</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Monaco GP Qualification</a></h3>
-                    <p class="card-excerpt">Tight race for pole position as rain threatens.</p>
+                    <h3 class="card-title"><a href="#">Breaking Records in the Pool</a></h3>
+                    <p class="card-excerpt">New world times set at supreme championship qualifiers.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
 
             <!-- Standard Card 3 -->
             <article class="news-card standard">
-                <img src="https://picsum.photos/seed/sport5/600/400" alt="Olympics" class="card-image">
+                <img src="assets/sport-messi.jpg" alt="Olympics" class="card-image">
                 <div class="card-content">
                     <div class="card-meta">
                         <span><i class="far fa-clock"></i> 1 day ago</span>
-                        <span>Olympics</span>
+                        <span>Football</span>
                     </div>
-                    <h3 class="card-title"><a href="#">Host City Selection Update</a></h3>
-                    <p class="card-excerpt">IOC announces final candidates for 2036 games.</p>
+                    <h3 class="card-title"><a href="#">The Greatest of All Time?</a></h3>
+                    <p class="card-excerpt">Reflecting on the career that changed the beautiful game forever.</p>
                     <a href="#" class="read-more">Read Article <span>&rarr;</span></a>
                 </div>
             </article>
@@ -198,7 +196,7 @@
             <div class="footer-col">
                 <h4>Categories</h4>
                 <ul class="footer-links">
-                    <li><a href="world.html">World News</a></li>
+
                     <li><a href="politics.html">Politics</a></li>
                     <li><a href="tech.html">Technology</a></li>
                     <li><a href="sports.html">Sports</a></li>

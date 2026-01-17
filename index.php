@@ -8,7 +8,7 @@
     <meta name="description"
         content="Fana News - Your trusted source for international news, politics, technology, and sports.">
     <title>Fana News | International News & Perspectives</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -28,7 +28,7 @@
 
             <div class="nav-links">
                 <a href="index.php" class="nav-item active">Home</a>
-                <a href="world.html" class="nav-item">World</a>
+                
                 <a href="politics.html" class="nav-item">Politics</a>
                 <a href="tech.html" class="nav-item">Technology</a>
                 <a href="sports.html" class="nav-item">Sports</a>
@@ -43,13 +43,12 @@
     <!-- Mobile Nav Drawer -->
     <div class="mobile-nav-overlay"></div>
     <div class="mobile-nav-drawer">
-        <div class="mobile-nav-header">
-            <a href="index.php" class="logo">fana<span>news.</span></a>
+        <div class="mobile-nav-header" style="justify-content: flex-end;">
             <div class="close-menu-btn"><i class="fas fa-times"></i></div>
         </div>
         <div class="mobile-links">
             <a href="index.php" class="active">Home</a>
-            <a href="world.html">World</a>
+            
             <a href="politics.html">Politics</a>
             <a href="tech.html">Technology</a>
             <a href="sports.html">Sports</a>
@@ -234,13 +233,8 @@
             <div class="header-title-wrapper">
                 <div class="yellow-accent-bar"></div>
                 <h2 class="section-title latest-news-title">Today's Latest News</h2>
-                <!-- Link to Admin Dashboard for easy access during development -->
-                 <a href="admin/index.php" style="margin-left: 20px; font-size: 0.8rem; color: #666; text-decoration: underline;" target="_blank">[Admin Dashboard]</a>
             </div>
-            <a href="world.html" class="view-all-btn">
-                View All
-                <i class="fas fa-arrow-right"></i>
-            </a>
+
         </div>
 
         <div class="news-grid">
@@ -430,7 +424,7 @@
             <div class="footer-col">
                 <h4>Categories</h4>
                 <ul class="footer-links">
-                    <li><a href="world.html">World News</a></li>
+                    
                     <li><a href="politics.html">Politics</a></li>
                     <li><a href="tech.html">Technology</a></li>
                     <li><a href="sports.html">Sports</a></li>
